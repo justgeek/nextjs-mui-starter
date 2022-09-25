@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  background-color: blue;
+  height: 75px;
+  padding: 16px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+}
