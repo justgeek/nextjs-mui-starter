@@ -1,5 +1,7 @@
 import { NextPage } from "next";
 
-export const HelloPage: NextPage = () => {
+const FirstPage: NextPage = () => {
   return <div>Hello from first page</div>;
 };
+
+export default FirstPage;
