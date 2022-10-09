@@ -1,0 +1,11 @@
+.nav-link {
+  &.MuiLink-root {
+    margin: 0 10px;
+    color: white;
+
+    cursor: pointer;
+    &.active {
+      font-weight: bold;
+    }
+  }
+}

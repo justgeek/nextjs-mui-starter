@@ -1,13 +1,15 @@
 import Link from "next/link";
+import { Link as MUILink } from "@mui/material";
 import { useRouter } from "next/router";
 import { FunctionComponent } from "react";
 import { AppRoute, ROUTES } from "routes";
+import "./styles.scss";
 
 export const NavigationMenu: FunctionComponent = () => {
   const router = useRouter();
 
   const isRouteActive = (route: AppRoute) => {
-    return router.pathname == route.path;
+    return router.asPath == route.path;
   };
 
   return (
@@ -16,7 +18,9 @@ export const NavigationMenu: FunctionComponent = () => {
         const { name, path, navigationLabel } = route;
         return (
           <Link href={path} key={name}>
-            <a className={`${isRouteActive(route) ? "text-active" : ""}`}>{navigationLabel}</a>
+            <MUILink underline="none" className={`nav-link ${isRouteActive(route) ? "active" : ""}`}>
+              {navigationLabel}
+            </MUILink>
           </Link>
         );
       })}
