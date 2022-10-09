@@ -5,7 +5,7 @@ import { theme } from "theme";
 
 // Any Global functionality, or behavior across the app can be handled here
 
-export const App: FunctionComponent<{ children: React.ReactNode }> = ({ children }) => {
+const App: FunctionComponent<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -15,3 +15,5 @@ export const App: FunctionComponent<{ children: React.ReactNode }> = ({ children
     </>
   );
 };
+
+export default App;
