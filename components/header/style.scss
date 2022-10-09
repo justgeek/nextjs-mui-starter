@@ -1,6 +1,8 @@
+@import "~/sass/colors.module.scss";
+
 .header {
   display: flex;
-  background-color: blue;
+  background-color: map-get($colors, "primary");
   height: 75px;
   padding: 16px;
 

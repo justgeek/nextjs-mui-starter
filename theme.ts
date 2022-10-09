@@ -1,9 +1,11 @@
 import { createTheme } from "@mui/material/styles";
+import colors from "./sass/colors.module.scss";
 
 export const theme = createTheme({
   palette: {
+    mode: "light",
     primary: {
-      main: "#0000FF",
+      main: colors.primary,
     },
     secondary: {
       main: "#189AB4",
